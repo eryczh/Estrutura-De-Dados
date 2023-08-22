@@ -1,4 +1,4 @@
-package main;
+package projeto_revisao_ed;
 
 public class Contato {
     

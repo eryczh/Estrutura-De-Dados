@@ -1,4 +1,4 @@
-package main;
+package projeto_revisao_ed;
 
 
 public class Vetor {
@@ -11,10 +11,10 @@ public class Vetor {
         this.tamanho = 0;
     } 
     
-    public void adiciona(String elemento)throws Exception{
+    public void adiciona(Object elemento)throws Exception{
         this.aumentaCapacidade();
       if (this.tamanho < this.elementos.length){
-          this.elementos[this.tamanho] = elemento;
+          this.elementos[this.tamanho] = (String) elemento;
           this.tamanho++;
       } else {
           throw new Exception("O Vetor já está cheio, "
